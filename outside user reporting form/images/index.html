@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/signup-img.jpg" alt="">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Crime or Incident registration form</h2>
+                   
+                        <div class="form-group">
+                            <label for="crime_type">What is the crime or incident you would like to tell us about? :</label>
+                            <div class="form-select">
+                                <select name="course" name="crime_type" id="crime_type">
+                                    <option value=""></option>
+                                    <option value="Arson">Arson</option>
+                                    <option value="Assault">Assault</option>
+                                    <option value="Bank and credit card fraud">Bank and credit card fraud</option>
+                                    <option value="Burglary">Burglary</option>
+                                    <option value="Child abuse">Child abuse</option>
+                                    <option value="Computer misuse">Computer misuse</option>
+                                    <option value="Counterfeiting and piracy">Counterfeiting and piracy</option>
+                                    <option value="Domestic abuse">Domestic abuse</option>
+                                    <option value="Doorstep crime">Doorstep crime</option>
+                                    <option value="Doorstep crime (rogue traders)">Doorstep crime (rogue traders)</option>
+                                    <option value="Drink / drug driving">Drink / drug driving</option>
+                                    <option value="Drugs">Drugs</option>
+                                    <option value="Environmental crime">Environmental crime</option>
+                                    <option value="Fraud">Fraud</option>
+                                    <option value="Gun crime">Gun crime</option>
+                                    <option value="Harassment ">Harassment</option>
+                                    <option value="Hate crime">Hate crime</option>
+                                    <option value="Illegal tobacco">Illegal tobacco</option>
+                                    <option value="Immigration">Immigration</option>
+                                     <option value="Knife crime">Knife crime</option>
+                                     <option value="Modern slavery">Modern slavery</option>
+                                     <option value="Murder (incl. attempted / planned murder)">Murder (incl. attempted / planned murder)</option>
+                                     <option value="Other">Other</option>
+                                     <option value="Possession of weapons">Possession of weapons</option>
+                                     <option value="Rape and sexual offences">Rape and sexual offences</option>
+                                     <option value="Robbery">Robbery</option>
+                                     <option value="Rural crimes">Rural crimes</option>
+                                     <option value="Terrorism">Terrorism</option>
+                                     <option value="Theft">Theft</option>
+                                     <option value="Vandalism">Vandalism</option>
+                                     <option value="Vehicle">Vehicle</option>
+                                     <option value="Violence">Violence</option>
+                                     <option value="Wanted person / fugitive">Wanted person / fugitive</option>
+                                     <option value="Weapons">Weapons</option>
+                                     <option value="Wildlife crime">Wildlife crime</option>
+                          
+                                </select>
+                                
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                               
+                            </div>
+                          
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name :</label>
+                                <input type="text" name="first_name" id="first_name" required/>
+                                <label for="name">Optional</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="middel_name">Middel Name :</label>
+                                <input type="text" name="middel_name" id="middel_name" required/>
+                                <label for="name">Optional</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name :</label>
+                                <input type="text" name="last_name" id="last_name" required/>
+                                <label for="name">Optional</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Where did the crime or incident take place?</label>
+                            <label for="address">Town or city or Postcode (VITAL INFORMATION) :</label>
+                            <input type="text" name="address" id="address" required/>
+                        </div>
+                        <div class="form-radio">
+                            <label  class="radio-label">Do you know when it happened? :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="yes" id="yes" checked>
+                                <label for="Yes">Yes</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="no" id="no">
+                                <label for="No">No</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="time">When did it happen?</label>
+                                <input type="Date" name="date" id="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="birth_date">Time?</label>
+                                <input type="time" name="time" id="time">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="other_address_details">Do you have any other address details e.g property number or road name? Can you tell us anything that will help us identify the location?</label>
+                            <input type="text" name=" other_address_details" id="other_address_details">
+                        </div>
+                        <div class="form-group">
+                            <label for="more_about_the_crime">Tell us more about the crime: what you heard, saw or know about.</label>
+                            <label for="more_about_the_crime">Please don't give information about the people involved as you will be asked details about this. (Required Info).</label>
+                            <input type="text" name="more_about_the_crime" id="more_about_the_crime">
+                        </div>
+                        <div class="form-group">
+                            <label for="people_involved_in_the_crime_access_vehicle">Do any of the people involved in the crime have access to a vehicle(s)?</label>
+                            <div class="form-select">
+                                <select name="people_involved_in_the_crime_access_vehicle" id="people_involved_in_the_crime_access_vehicle">
+                                    <option value=""></option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="dont know">Do not Know</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="people_involved_in_the_crime_access_weapon">Do any of the people involved in the crime have access to a weapon/weapons?</label>
+                            <div class="form-select">
+                                <select name="people_involved_in_the_crime_access_weapon" id="people_involved_in_the_crime_access_weapon">
+                                    <option value=""></option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                    <option value="dont know">Do not Know</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="do_you_know_about_the_person">Please tell us about the person or people involved or responsible for the crime.</label>
+                            <label for="do_you_know_about_the_person">What do you know about the person  / people?
+                                Can you tell us their names, age or where they live (if different from the address of the crime)?</label>
+                            <input type="text" name="do_you_know_about_the_person" id="do_you_know_about_the_person" />
+                        </div>
+                        <div class="form-group">
+                            <label for="people_look_like">What does the person  / people look like?
+                                </label>
+                            <input type="text" name="people_look_like" id="people_look_like" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact_details_for_the_person">Do you know any contact details for the person / people? 
+                                </label>
+                            <input type="text" name="contact_details_for_the_person" id="contact_details_for_the_person" />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Keep in contact (your details will always be completely anonymous)</label>
+                                <label for="tel"> If you need to clarify any of your information or you think there might be extra information you can give, Please leave us your phone we will contact you as soon as possibel.</label>
+                            <input type="tel" name="phone" id="phone" />
+                        </div>
+                        <div class="form-group">
+                            <label for="evidence" class="form-label">Upload any evidence that you might think would help us.</label>
+                            <input class="form-control" type="file" id="evidence" name="evidence" multiple />
+                            <label for="evidence">You can upload multiple files at the same time</label>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
